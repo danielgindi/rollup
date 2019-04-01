@@ -1,5 +1,6 @@
 const path = require('path');
 const assert = require('assert');
+const URL = require('url').URL;
 
 module.exports = {
 	description: 'resolves import.meta.url',
