@@ -4,7 +4,7 @@ module.exports = {
 		output: {
 			importMetaUrl(chunkId, moduleId) {
 				return `'${chunkId}/${moduleId
-					.replace('\\', '/')
+					.replace(/\\/g, '/')
 					.split('/')
 					.slice(-2)
 					.join('/')}'`;
