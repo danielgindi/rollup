@@ -315,6 +315,7 @@ export interface OutputOptions {
 	format?: ModuleFormat;
 	freeze?: boolean;
 	globals?: GlobalsOption;
+	importMetaUrl?: (chunkId: string, moduleId: string) => string;
 	indent?: boolean;
 	interop?: boolean;
 	intro?: string | (() => string | Promise<string>);

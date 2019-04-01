@@ -248,6 +248,7 @@ function getOutputOptions(
 		format: format === 'esm' ? 'es' : format,
 		freeze: getOption('freeze', true),
 		globals: getOption('globals'),
+		importMetaUrl: getOption('importMetaUrl'),
 		indent: getOption('indent', true),
 		interop: getOption('interop', true),
 		intro: getOption('intro'),
